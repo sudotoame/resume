@@ -20,7 +20,7 @@
 | **Оркестрация** | Docker Swarm, Vagrant для инфраструктуры |
 | **CI/CD** | GitLab CI/CD, GitLab Runner, многоэтапные пайплайны |
 | **Мониторинг** | Prometheus, Grafana, Portainer |
-| **Веб-серверы** | Nginx (reverse proxy), Apache |
+| **Веб-серверы** | Nginx (reverse proxy) |
 | **Сети** | TCP/IP, DNS, HTTP/HTTPS, маршрутизация, iptables |
 | **Программирование** | Bash, Python, C |
 | **Контроль версий** | Git, GitHub, GitLab |
@@ -39,7 +39,7 @@
 - **Контейнеризация**: 9 микросервисов (Gateway, Booking, Payment, Loyalty, Hotel, Session, Report + PostgreSQL, RabbitMQ)
 - **Multi-stage Docker builds**: оптимизация размера образов на 60-70%
 - **Инфраструктура**: автоматизированное развертывание кластера (1 manager + 2 worker nodes) через Vagrant
-- **Автоматизация**: bash-скрипты для init/scale/teardown кластера, сборки и push образов в Docker Hub
+- **Автоматизация**: bash-скрипты для создание кластера, сборки и push образов в Docker Hub
 - **Сетевая архитектура**: reverse proxy через Nginx, изоляция сервисов в Docker networks
 - **Мониторинг**: интеграция Portainer для управления кластером
 - **Тестирование**: функциональные тесты через Postman с SSH-туннелированием
